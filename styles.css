@@ -1,0 +1,71 @@
+body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wheel-container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#wheel {
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+
+#pointer {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #000;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: navy;
+    color:white;
+    border:none;
+    border-radius: 4px;
+}
+
+#namesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#namesList li {
+    margin: 5px 0;
+}
+
+.winner {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
