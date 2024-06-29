@@ -5,6 +5,7 @@ const ctx = canvas.getContext('2d');
 const diameter = canvas.width;
 const radius = diameter / 2;
 let spinning = false;
+const colors = ['#FFDDC1', '#FFABAB', '#FFC3A0', '#FF677D', '#D4A5A5', '#392F5A', '#31A2AC', '#61C0BF', '#6B4226', '#D9BF77'];
 
 function drawWheel() {
     const sliceAngle = 2 * Math.PI / names.length;
@@ -16,7 +17,7 @@ function drawWheel() {
         ctx.moveTo(radius, radius);
         ctx.arc(radius, radius, radius, startAngle, endAngle);
         ctx.closePath();
-        ctx.fillStyle = index % 2 === 0 ? '#FFDDC1' : '#FFABAB';
+        ctx.fillStyle = colors[index % colors.length];
         ctx.fill();
         ctx.stroke();
 
